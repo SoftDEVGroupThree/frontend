@@ -77,14 +77,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     },
     registerButton: {
-    backgroundColor: colors.dark,
+    backgroundColor: colors.grey,
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 5,
     marginTop: 10,
     },
     registerText: {
-    color: '#fff',
+    color: colors.dark,
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',

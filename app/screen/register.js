@@ -1,7 +1,8 @@
 
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { colors} from '../../component/colors';
 import React, { useState } from 'react';
+import { Link } from 'expo-router';
 
 
 export default function RegisterScreen (){
@@ -61,7 +62,9 @@ export default function RegisterScreen (){
         secureTextEntry
         />
         <TouchableOpacity style={styles.button} onPress={handleRegistration}>
+        <Link href="../../">
         <Text style={styles.buttonText}>Confirm</Text>
+        </Link>
         </TouchableOpacity>
     </View>
     )
@@ -107,4 +110,4 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
     },
-  });
+});

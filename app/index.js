@@ -1,6 +1,5 @@
-import {StyleSheet, View, Text} from "react-native";
+import {StyleSheet, View, Text, TouchableOpacity} from "react-native";
 import { colors } from "../component/colors";
-import { Button } from "react-native-web";
 import { Link } from "expo-router";
 
 export default function Page() {
@@ -13,13 +12,11 @@ export default function Page() {
                 </Text>
             </View>
             <View style = {[styles.box]}></View>
-            <View style = {{padding: 30}}>
-              <Link href="screen/login">
-              <Button title= "Let's get started!"
-                color = {colors.dark}
-                ></Button>
-              </Link>
-            </View>
+            <TouchableOpacity style={{padding: 30}}>
+            <Link href="screen/login">
+            <Text style={styles.box}>Register</Text>
+            </Link>
+            </TouchableOpacity>
         </View>
   );
 }
