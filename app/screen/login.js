@@ -1,6 +1,9 @@
 import { View,Text, StyleSheet, TextInput, Button} from 'react-native';
 import { colors } from "../../component/colors";
 
+
+const Separator = () => <View style={styles.separator} />;
+
 export default function Login() {
     return (
         <View style={styles.container}>
@@ -25,6 +28,11 @@ export default function Login() {
                     color = {colors.dark}
                 ></Button>
             </View>
+            <View style = {{padding: 30}}>
+                <Button title= "Register"
+                    color = {colors.dark}
+                ></Button>
+            </View>
         </View>
     );
 }
@@ -42,10 +50,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: colors.dark,
     },
-    box: {
-    width: 200,
-    height: 200,
-    backgroundColor: colors.box,
-    borderRadius: 20
-},
 });
