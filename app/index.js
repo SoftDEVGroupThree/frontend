@@ -1,4 +1,4 @@
-import {StyleSheet, View, Text, Pressable} from "react-native";
+import {StyleSheet, View, Text} from "react-native";
 import { colors } from "../component/colors";
 import { Button } from "react-native-web";
 import { Link } from "expo-router";
