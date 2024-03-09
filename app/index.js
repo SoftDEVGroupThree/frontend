@@ -12,9 +12,9 @@ export default function Page() {
                 </Text>
             </View>
             <View style = {[styles.box]}></View>
-            <TouchableOpacity style={{padding: 30}}>
+            <TouchableOpacity style ={{padding: 30}}>
             <Link href="screen/login">
-            <Text style={styles.box}>Register</Text>
+            <Text style={styles.buttonText}>Les's get started!</Text>
             </Link>
             </TouchableOpacity>
         </View>
@@ -39,4 +39,16 @@ box: {
     backgroundColor: colors.box,
     borderRadius: 20
 },
+button: {
+    backgroundColor: colors.dark,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    marginTop: 10,
+},
+buttonText: {
+  color: '#fff',
+  fontSize: 16,
+  fontWeight: 'bold',
+  textAlign: 'center',
+}
 });
